@@ -10,38 +10,29 @@
     color: #000;
 }
 
-header {
+
+/* header {
     position: fixed;
     display: block;
+} */
+
+.active1 a {
+    color: #000 !important;
+    font-size: 18px;
+    margin-right: 30px;
 }
 
-.header {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    padding: 10px;
-    border-bottom: 1px double black;
-    top: 0;
-    width: 100%;
-}
-
-.header .menubar a {
-    padding: 10px 20px;
-}
-
-.header .menubar a:hover {
-    border-bottom: 3px double black;
+.active1 a:hover {
     font-weight: bolder;
+    border-bottom: 1px solid black;
+    color: #000;
 }
 
-.feature input,
-.feature a {
-    margin-right: 20px;
+.active2 {
+    border-bottom: 2px double black;
 }
 
-.active {
-    border-bottom: 3px double black;
-    font-weight: bolder;
+.nopadding {
+    padding: 0 !important;
+    height: 50px;
 }
