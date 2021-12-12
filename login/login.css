@@ -1,0 +1,25 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body {
+    background-image: url(../img/body.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login {
+    margin-top: 200px;
+}
+
+.inputspace {
+    border-radius: 3ch;
+    margin-bottom: 20px;
+}
