@@ -17,23 +17,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
-.inputspace {
-    border-radius: 3ch;
-    margin-bottom: 20px;
-}
-
-.btn-submit {
-    margin: 0 20px;
-}
-
-.loginpage {
+.registerspace {
     background-color: rgba(255, 255, 255, 0.7);
-    /* padding: 30px 30px; */
-    border-radius: 1ch;
-    margin: 200px;
+    margin-top: 100px;
 }

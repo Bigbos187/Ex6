@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="fullmenu">
         <nav class="navbar navbar-expand-lg d-flex navbarcss">
             <div class="col-12 col-md-2 col-lq-2 logo"> Tam|Vo</div>
             <div class="container-fluid col-6 col-md-8 col-lq-8">
@@ -28,16 +28,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 col-md-1 col-lq-1 login"> <i class="fa-solid fa-arrow-right-to-bracket"><a href="#"></a></i></div>
-            <div class="col-2  col-md-1 col-lq-1  cart"><i class="fa-solid fa-cart-shopping"><a href="#"></a></i></div>
+            <div class="col-2 col-md-1 col-lq-1 login"><a href="login/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a> </div>
+            <div class="col-2  col-md-1 col-lq-1  cart"><a href="login/login.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
         </nav>
     </header>
-    <section>
+    <!-- <section>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner slideshow">
                 <div class="carousel-item active bg-danger">
@@ -57,8 +57,35 @@
             </button>
         </div>
 
+    </section> -->
+
+    <section class="bodybackground">
+
+        <div>
+            <h1>
+                Welcome to Tam|Vo
+            </h1>
+        </div>
+        <div>
+            <h3>
+                <a href="">Let's shopping>></a>
+            </h3>
+        </div>
+
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos < currentScrollPos) {
+                document.getElementById("fullmenu").style.top = "-60px";
+            } else {
+                document.getElementById("fullmenu").style.top = "0px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
 </html>

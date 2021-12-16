@@ -11,12 +11,16 @@
 }
 
 header {
-    position: relative;
-    background-color: antiquewhite;
+    position: fixed;
+    top: 0;
     width: 100%;
+    display: block;
+    transition: top 1s;
+    z-index: 10;
 }
 
-body {}
+
+/* body {} */
 
 .logo {
     display: flex;
@@ -36,6 +40,7 @@ body {}
     padding: 0 !important;
     background-color: #fff;
     box-shadow: 0.5px 0.5px 2px grey;
+    /* z-index: 10; */
 }
 
 .menu-item a {
@@ -73,6 +78,7 @@ body {}
 .cart i {
     transition: 0.3s;
     font-size: 20px;
+    color: #000;
 }
 
 .menu-toggle {
@@ -113,4 +119,25 @@ body {}
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.bodybackground {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/cover2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bodybackground h1 {
+    position: relative;
+    color: #fff;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
 }
